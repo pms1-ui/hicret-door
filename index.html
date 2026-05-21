@@ -27,10 +27,10 @@
       position: relative;
     }
 
-    /* 배경 이미지 제거, 모래색 배경 */
+    /* 배경 */
     .bg-wrapper {
       position: relative;
-      background: #f5e6c8;
+      background: #f2f4f6;
       min-height: 100vh;
     }
 
@@ -74,38 +74,51 @@
       }
     }
 
-    /* 이벤트 설명 */
+    /* 이벤트 설명 - 토스/카카오 스타일 */
     .dim-box {
-      background: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-radius: 20px;
-      padding: 36px 28px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: 24px;
+      padding: 40px 28px;
       margin-bottom: 12px;
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      color: #191f28;
+      border: none;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .dim-box .label-tag {
+      display: inline-block;
+      background: #f2f4f6;
+      color: #4e5968;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      letter-spacing: -0.2px;
     }
 
     .dim-box h2 {
-      font-size: 21px;
-      font-weight: 700;
-      margin-bottom: 18px;
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 14px;
       text-align: center;
-      color: #fff;
-      line-height: 1.6;
-      letter-spacing: -0.3px;
+      color: #191f28;
+      line-height: 1.5;
+      letter-spacing: -0.5px;
     }
 
     .dim-box p {
       font-size: 15px;
-      line-height: 1.9;
-      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.8;
+      color: #6b7684;
       text-align: center;
+      letter-spacing: -0.2px;
     }
 
     .dim-box .highlight {
-      color: #ffd54f;
+      color: #3182f6;
       font-weight: 800;
       position: relative;
     }
@@ -113,76 +126,71 @@
     .dim-box .highlight::after {
       content: '';
       position: absolute;
-      bottom: -2px;
+      bottom: -1px;
       left: 0;
       right: 0;
-      height: 2px;
-      background: #ffd54f;
-      opacity: 0.4;
-      border-radius: 1px;
+      height: 6px;
+      background: rgba(49, 130, 246, 0.15);
+      border-radius: 3px;
+      z-index: -1;
     }
 
-    /* 이벤트 기간 박스 */
+    /* 이벤트 기간 박스 - 토스 스타일 */
     .dim-box-period {
-      background: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: 20px;
       padding: 24px 28px;
       margin-bottom: 12px;
-      text-align: center;
-      border: 1px solid rgba(255, 215, 0, 0.15);
-      box-shadow: 
-        0 8px 32px rgba(0, 0, 0, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      border: none;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     }
 
     .dim-box-period .period-label {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 700;
-      color: rgba(255, 215, 100, 0.9);
-      margin-bottom: 10px;
-      letter-spacing: -0.2px;
+      color: #191f28;
+      margin-bottom: 8px;
+      letter-spacing: -0.3px;
       text-align: left;
     }
 
     .dim-box-period .period-date {
       font-family: 'Outfit', sans-serif;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 700;
-      color: #fff;
-      letter-spacing: 1px;
+      color: #3182f6;
+      letter-spacing: 0.5px;
       text-align: left;
     }
 
     /* 구분선 */
     .divider {
-      width: 40px;
-      height: 2px;
-      background: rgba(255, 215, 100, 0.4);
-      margin: 14px auto;
-      border-radius: 1px;
+      width: 100%;
+      height: 0;
+      margin: 6px auto;
     }
 
-    /* 유의사항 */
+    /* 유의사항 - 토스 스타일 */
     .dim-box-notice {
-      background: rgba(0, 0, 0, 0.45);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
       border-radius: 20px;
       padding: 28px 24px;
       margin-bottom: 12px;
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+      color: #191f28;
+      border: none;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     }
 
     .dim-box-notice h3 {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 700;
       margin-bottom: 16px;
-      color: rgba(255, 215, 100, 0.9);
-      letter-spacing: -0.2px;
+      color: #191f28;
+      letter-spacing: -0.3px;
     }
 
     .dim-box-notice ul {
@@ -191,22 +199,23 @@
     }
 
     .dim-box-notice ul li {
-      font-size: 12.5px;
+      font-size: 13px;
       line-height: 1.8;
-      color: rgba(255, 255, 255, 0.7);
+      color: #8b95a1;
       padding-left: 16px;
       position: relative;
-      margin-bottom: 5px;
+      margin-bottom: 4px;
+      letter-spacing: -0.2px;
     }
 
     .dim-box-notice ul li::before {
       content: '';
       position: absolute;
       left: 0;
-      top: 9px;
+      top: 10px;
       width: 4px;
       height: 4px;
-      background: rgba(255, 215, 100, 0.6);
+      background: #d1d6db;
       border-radius: 50%;
     }
 
@@ -220,7 +229,7 @@
       max-width: 480px;
       padding: 20px 24px;
       padding-bottom: calc(20px + env(safe-area-inset-bottom));
-      background: linear-gradient(0deg, rgba(0,0,0,0.85) 50%, rgba(0,0,0,0.4) 80%, transparent 100%);
+      background: linear-gradient(0deg, rgba(242,244,246,1) 50%, rgba(242,244,246,0.6) 80%, transparent 100%);
       z-index: 100;
     }
 
@@ -228,17 +237,17 @@
       display: block;
       width: 100%;
       padding: 18px 40px;
-      background: #000;
+      background: #191f28;
       color: #fff;
       font-size: 16px;
       font-weight: 700;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: 14px;
+      border: none;
+      border-radius: 16px;
       cursor: pointer;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
       text-decoration: none;
-      letter-spacing: 0.5px;
+      letter-spacing: -0.3px;
       position: relative;
       overflow: hidden;
     }
@@ -250,7 +259,7 @@
       left: -100%;
       width: 100%;
       height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.06), transparent);
       transition: left 0.5s ease;
     }
 
@@ -259,9 +268,8 @@
     }
 
     .cta-button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-      border-color: rgba(255, 255, 255, 0.25);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     }
 
     .cta-button:active {
@@ -366,6 +374,7 @@
 
         <!-- 이벤트 설명 -->
         <div class="dim-box">
+          <div style="text-align:center;"><span class="label-tag">초대 전용</span></div>
           <h2>오직 초대받은 여러분에게<br>히크릿 도어가 열립니다.</h2>
           <p>
             단 <span class="highlight">5일간</span> 공개되는<br>
