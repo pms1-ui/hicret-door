@@ -45,6 +45,17 @@
       display: block;
     }
 
+    .video-section::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background: linear-gradient(0deg, #f2f4f6 0%, transparent 100%);
+      pointer-events: none;
+    }
+
     /* 콘텐츠 오버레이 */
     .content-overlay {
       position: relative;
@@ -409,7 +420,7 @@
 
         <!-- 참여 방법 이미지 -->
         <div class="howto-section">
-          <img src="https://aws-childy-image.s3.ap-northeast-2.amazonaws.com/video/hi-cret-260521-howto.png" alt="참여 방법" />
+          <img src="https://aws-childy-image.s3.ap-northeast-2.amazonaws.com/video/hi-cret-260521-howto.jpeg" alt="참여 방법" />
         </div>
 
         <!-- 구분선 -->
